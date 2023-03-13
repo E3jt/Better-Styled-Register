@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>New style</title> 
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+        
+        <link rel="stylesheet" href="stylesheet.css">          
+
+    </head>
+
+    <body>
+
+        <form method="post">
+
+            <p id="title">Rejstracja Kandydatów</p><img src="logo.png">
+            <input type="text" name="nazwisko" placeholder="Nazwisko*"/>
+            <input type="text" name="imie" placeholder="Imie*"/>
+            <input type="text" name="imie2" placeholder="2-ugie Imie"/>
+            <span>
+                <input type="text" name="pesel" placeholder="Pesel**" class="pesel" id="rem"/>
+                <p id="pesel">Nie posiadam numeru pesel</p>
+                <input type="checkbox" name="pes" value="fals" class="pesel ha" id="check" />
+            </span>
+            <select name="nazwa_dok" id="nazwadok" disabled>
+                <option value=null>Opcja 1***</option>
+                <option >Paszport</option>
+                <option >Inne</option>
+            </select>
+            <input type="text" name="nr_dok" placeholder="Numer dok. Tożsamości***" id="numerdok" disabled/>
+            <input type="text" name="emile" placeholder="E-mail*"/>
+            <input type="text" name="tel" placeholder="Numer telefonu"/>
+            <input type="text" name="szkola" placeholder="Szkoła*"/>
+            <input type="text" name="miejscowosc" placeholder="Miejscowość*"/>
+            <p id="dest">Kierunek</p>
+            <select name="kierunek1">
+                <option value=null>Opcja 1*</option>
+                <option >Technik fotografii i multimediów</option>
+                <option >Technik informatyk</option>
+                <option >Technik programista</option>
+                <option >Technik logistyk</option>
+                <option >Technik weterynarii</option>
+                <option >Technik spedytor</option>
+                <option >Technik analityk</option>
+                <option >Technik tekstronik</option>
+                <option >Technik projektant tekstyliów</option>
+                <option >Fotograf - szkoła branżowa I stopnia</option>
+                <option >Logistyk magazynier - szkoła branżowa I stopnia</option>
+            </select>
+            <button type="submit" value="rejstracja" name="dodaj" id="reg">Zarejestruj się</button>
+           
+            <p id="legend">* - Wymagane pole</p>
+        </form>
+        <button onclick='window.open("http://localhost/dwatrzy/main.html", "")' id="backed"><</button>
+                
+        <div id="over">
+        </div>
+    
+    
+        <div id="alrt">
+            Upewnij się że wszystkie wymagane dane zostały podane!
+            <button onclick="ok()" id="alert">Rozumiem</button>
+        </div>
+        
+        <div id="alrtdupli">
+            Wybór kierunku powtórzył sie wypełnij formularz ponownie!
+            <button onclick="okdupli()" id="alertdupli">Rozumiem</button>
+        </div>
+    
+        <div id="alrtp">
+            Długość/typ danych w polu pesel jest nie odpowiednia/ni!
+            <button onclick="okp()" id="alertp">Rozumiem</button>
+        </div>
+    
+        <div id="alrtdone">
+            To już wszystko dziękujemy za rejstracje i życzymy miłego dnia!
+            <button onclick="okdone()" id="alertdone">Rozumiem</button>
+        </div>
+    
+        <div id="alrtbad">
+            Błąd wprowadzonych danych któreś z pól ma nie odpowiednie dane!
+            <button onclick="okbad()" id="alertbad">Rozumiem</button>
+        </div>
+    
+        <div id="alrtema">
+            Błąd wprowadzony email znajduje się już w bazie danych!
+            <button onclick="okema()" id="alertema">Rozumiem</button>
+        </div>
+    
+        <div id="alrtpes">
+            Błąd wprowadzony pesel znajduje się już w bazie danych!
+            <button onclick="okpes()" id="alertpes">Rozumiem</button>
+        </div>
+
+
+        <script type="text/javascript" src="all.js"></script>
+    </body>
+
+</html>
