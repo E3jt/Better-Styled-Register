@@ -38,7 +38,7 @@ input, button, select{
     height:5vh;
     border-radius:0.5vw;
     border-width:0vw;
-    font-size:150%;
+    font-size:1.5vw;
     background-color:rgba(70, 90, 126, 0.4);
     color-scheme: dark;
     transition:0.2s;
@@ -48,26 +48,27 @@ span {
     display:flex;
     margin: auto;
     width: 50vw ;
-    
+    justify-content: space-between;
+	font-size:1.5vw;
 }
 #pesel {
     margin:0px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius:0.5vw;
     background-color:rgba(70, 90, 126, 0.4);
     text-align:center;
     height:5vh;
-    width: 10vw;
+    width: 9vw;
+	font-size:1vw;
 }
 .pesel {
-    width:40vw;
-    margin:0px;
+    width:37vw;
     padding:0px;
+	margin:0px;
 }
 .ha {
-    width:5vw;
+    width:2.5vw;
     padding:0px;
+	margin:0px;
 }
 input::placeholder {
     color: #212121;
@@ -209,6 +210,7 @@ span *:hover {
 }
 #legend{
     opacity:0.8;
+	font-size:1vw;
 }
 
 div button:hover {
